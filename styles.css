@@ -73,3 +73,8 @@ blockquote::after {
     border: 10px solid white;
     border-radius: 50%;
 }
+
+.lead{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50%;
+}
