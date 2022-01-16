@@ -12,121 +12,867 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <!-- Fontawesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Selamat Datang</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+        .oke{
+            padding: 20px;
+            padding-top: 3rem;
+            color:white;
+        }
+        .besar{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        *,::after,::before{
+            box-sizing: border-box;
+        }
+        .navbar , .navbar-expand-lg , .navbar-group{
+            position: fixed;
+            width: 100%;
+            z-index: 1050;
+            transform: translateZ(0);
+            transition: all .5s ease-out;
+            box-shadow: 0 2px 15px rgb(71 120 120 / 50%);
+        }
+        .jumbotron{
+            padding: 5px;
+            background-color: #f4f5f1;
+        }
+        *.fa-star ,
+        *.fa-star-half-alt{
+            color: #FFD700;
+            font-size: 15px;
+        }
+        .terpopuler{
+            padding: 5px;
+            margin-top: 2rem;
+            background-color: white;
+        }
+        .footer-1 ul li{
+            list-style: none;
+        }
+        .footer-1 ul li a{
+            position:relative;
+            display: block;
+            margin-left: -30px;
+            color:gray;
+            text-decoration: none;
+        }
+        .footer-1 ul li a:hover{
+            color:red;
+        }
+    </style>
+ 
 </head>
 
 <body>
-    <section id="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-            <div class="container-fluid">
-                <a class="navbar-brand">FASHOP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#body">Home</a>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-group">
+        <div class="container">  
+        <a class="navbar-brand" href="#">
+            <img src="https://image.flaticon.com/icons/png/512/2165/2165674.png" width="40" height="40">CODE<strong>MAX</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program Belajar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Semua Kelas</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas Android</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas CodeIgniter</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas Laravel</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/artikel">ARTICLES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FORUM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PREMIUM</a>
+            </li>
+          </ul>
+          <div class="tombol-1" style="margin:5px;">
+            <a href="/login" class="btn btn-light text-dark nav-link" style="border-color:#d3d3d3;">
+                Login
+            </a>
+          </div>
+          <div class="tombol-1">
+            <a href="/register" class="btn btn-info text-white nav-link">
+                Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+    <!-- BODY -->
+        <div class="p-5 mb-4  rounded-3 jumbotron">
+            <div class="container py-5"> 
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="display-5 fw-bold">Belajar Coding Dengan Standar Kompetensi Kerja</h1>
+                            <p class="col-md-8 fs-4">
+                                Kembangkan karirmu sebagai developer profesional dengan keahlian coding yang dibutuhkan di dunia industri melalui kelas online Codemax
+                            </p>
+                        <button class="btn btn-primary btn-lg" type="button"><i class="fas fa-certificate"></i> Gabung Premium</button>
+                        <button class="btn btn-secondary btn-lg ms-3" type="button">Lihat Kelas</button>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <img src="images/programing.svg" height="350" width="400">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- AKHIR BODY -->
+    <!-- SLERET -->
+        <div class="container-fluid">
+            <div class="row justify-content-center bg-info" style="padding-bottom: 30px;">
+                <div class="col-md-3">
+                    <div class="text-center oke">
+                        <h4 class="besar">
+                            <span>136.356</span>
+                        </h4>
+                        <h5 class=" mini-info-teks">Member Aktif</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="text-center oke">
+                            <h4 class="besar">
+                                <span>119</span>
+                            </h4>
+                            <h5 class=" mini-info-teks">Kelas Online</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="text-center oke">
+                        <h4 class="besar">
+                            <span>1.694</span>
+                        </h4>
+                        <h5 class=" mini-info-teks">Materi Belajar</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="text-center oke">
+                        <h4 class="besar">
+                            <span>421</span>
+                        </h4>
+                        <h5 class=" mini-info-teks">Jam Pelajaran</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- AKHIR SLERET -->
+    <!-- Macam Macam Kelas -->
+    <section class="terpopuler">
+        <div class="container">
+        <div class="row justify-content-center mt-3">
+            <h1 class="text-center">Kelas Online Populer</h1>
+            <div class="col-md-3">         
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/Menguasai_Framework_Codeigniter2.jpg" height="230">
+                        </a>
+                            <h5>Menguasai Framework Codeigniter</h5>
+                            <p class="text-muted"><strong>20 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 290.000</strong>
+                            </div>
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <small class="ms-1">(85)</small>
+                            </div>
+                          <p class=" text-muted ms-1">31 Siswa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">   
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/Study_Kasus_Web_Geolocation_Dengan_Laravel_Dan_Here_Maps2 (1).jpg" height="230">
+                        </a>
+                            <h5>Study Kasus Web Geolocation Dengan Laravel Dan Here Maps</h5>
+                            <p class="text-muted"><strong>18 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 259.000</strong>
+                            </div>
+                    <div class="d-flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <small class="ms-1">(77)</small> 
+                        <p class=" text-muted ms-1">23 Siswa</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/Membangun_Website_Toko_Online_Berbasis_CodeIgniter2.jpg" height="230">                
+                        </a>
+                            <h5>Membangun Website Toko_Online Berbasis CodeIgniter2</h5>
+                            <p class="text-muted"><strong>87 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 350.000</strong>
+                            </div>
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i>
+                                <small class="ms-1">(50)</small>
+                            </div> 
+                          <p class=" text-muted ms-1">19 Siswa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/Mahir_dasar-dasar_Laravel_8x_300.jpg" height="230">
+                        </a>
+                            <h5>Laravel 8 Fundamentals</h5>
+                            <p class="text-muted"><strong>46 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 250.000</strong>
+                            </div>
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i>
+                                <small class="ms-1">(100)</small>
+                            </div>
+                          <p class=" text-muted ms-1">25 Siswa</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="terpopuler">
+        <div class="container">
+        <div class="row justify-content-center mb-3 mt-3">
+            <h1 class="text-center">Kelas Online Terbaru</h1>
+            <div class="col-md-3">         
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                        <img src="images/Membuat_Sistem_Informasi_Perpustakaan_Menggunakan_Laravel_62.jpg" height="230">
+                        </a>
+                        <h5>Membuat_Sistem Informasi Perpustakaan Menggunakan Laravel</h5>
+                        <p class=" text-muted"><strong> Modul</strong></p>
+                        <div class="d-flex text-info ">
+                            <strong>Rp 375.000</strong>
+                        </div>
+                    <div class="d-flex">
+                        <div class="d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star"></i>
+                            <small class="ms-1">(99)</small>
+                        </div>   
+                      <p class=" text-muted ms-1">13 Siswa</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">   
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/mobirise_300.jpg" height="230">
+                        </a>
+                            <h5>Membuat Website Profile Perusahaan Tanpa Coding Dengan Mobirise</h5>
+                            <p class=" text-muted"><strong> 25 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 250.000</strong>
+                            </div>
+                    <div class="d-flex">
+                        <div class="d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star-half-alt"></i>
+                            <small class="ms-1">(80)</small>
+                        </div> 
+                      <p class=" text-muted ms-1">38 Siswa</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/elearning.jpg" height="230">
+                        </a>
+                            <h5>Membuat Aplikasi E-learning di Android Menggunakan Realtime Firebase</h5>
+                            <p class=" text-muted"><strong> 38 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 250.000</strong>
+                            </div>
+                    <div class="d-flex">
+                        <div class="d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star"></i>
+                             <small class="ms-1">(101)</small>
+                        </div> 
+                      <p class=" text-muted ms-1">19 Siswa</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="images/vuechat_300.jpg" height="230">
+                        </a>
+                            <h5>Membuat Chat Group Dengan Vue 3 dan Firebase</h5>
+                            <p class=" text-muted"><strong>25 Modul</strong></p>
+                            <div class="d-flex text-info ">
+                                <strong>Rp 250.000</strong>
+                            </div>
+                    <div class="d-flex">
+                        <div class="d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star"></i>
+                            <small class="ms-1">(120)</small> 
+                        </div>
+                      <p class=" text-muted ms-1">22 Siswa</p>                
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn text-dark justify-content-center mb-5 " style="border-color:#d3d3d3;">Kelas Lainnya</a>
+        </div>
+        </div>
+    </section>
+    <!-- Akhir Macam Macam Kelas -->
+    <!-- Teknologi Terbaru -->
+    <section style="background-color: #f4f5f1; margin-bottom: 100px;">
+        <div class="container">
+            <div class="text-center mb-2">
+                <h3 class="mb-3 pt-5"><strong>TEKNOLOGI TERBARU</strong> </h3>
+                <p class="h4 mb-5">Belajar Bahasa Pemograman , Framework , Tools</p>
+            </div>
+            <div class="row row-cols-3 row-cols-md-6 text-center">
+                <div class="mb-5 col">
+                    <img src="https://image.flaticon.com/icons/png/512/1051/1051277.png" height="100">
+                    <p>HTML 5</p>
+                </div>
+                <div class="mb-5 col ">
+                    <img src="https://p.kindpng.com/picc/s/485-4850258_bootstrap-logo-png-image-free-download-searchpng-logos.png" height="100">
+                    <p>BOOTSTRAP</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-and-moodle-elearningworld-5.png" height="100">
+                    <p>MySQL</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.freepnglogos.com/uploads/php-logo-png/php-logo-parental-advisory-explicit-content-logo-png-transparent-3.png" height="100">
+                    <p>PHP</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png" height="100">
+                    <p>CODEIGNITER</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/09/Laravel_logo-700x508.png" height="100">
+                    <p>LARAVEL</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" height="100">
+                    <p>FIREBASE</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://image.flaticon.com/icons/png/512/226/226770.png" height="100">
+                    <p>ANDROID</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.kindpng.com/picc/m/445-4450254_jquery-logo-icon-svg-hd-png-download.png" height="100">
+                    <p>JQUERY</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png" height="100">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" height="100">
+                    <p>REACT</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.kindpng.com/picc/m/206-2061319_vue-js-icon-svg-hd-png-download.png" height="100">
+                    <p>VUE</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://iconape.com/wp-content/png_logo_vector/git-icon.png" height="100">
+                    <p>GIT</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://laravel-livewire.com/img/twitter.png" height="100">
+                    <p>LARAVEL LIVEWIRE</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://brandslogos.com/wp-content/uploads/images/large/python-logo.png" height="100">
+                    <p>PYTHON</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://iconape.com/wp-content/png_logo_vector/tailwind-css-logo.png" height="100">
+                    <p>TAILWIND</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://www.pngitem.com/pimgs/m/385-3850320_png-transparent-mongodb-icon-mongodb-logo-png-download.png" height="100">
+                    <p>MONGO DB</p>
+                </div>
+                <div class="mb-5 col">
+                    <img src="https://download.logo.wine/logo/Go_(programming_language)/Go_(programming_language)-Logo.wine.png" height="100">
+                    <p>GO</p>
+                </div>
+            </div>
+          <h3 class="text-center pb-5">Materi belajar akan terus berkembang dan bertambah secara berkala</h3>
+        </div>
+    </section>
+    <!-- Akhir Teknologi Terbaru -->
+    <!-- Gambar Desc -->
+    <section>
+        <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="pt-md-5 pt-0">
+                        <h1 class=" mb-4"><strong>Belajar Coding 100% <br/>Lebih Cepat dan <br/> Terarah</strong></h1>
+                        <p class="lead">Bagaimana jika kamu bisa menghemat<br/> waktu belajarmu 
+                            dan biarkan kami <br/>menyiapkan alur belajar terbaik untukmu? 100% lebih terarah.
+                        </p>
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <div class="gamber pt-md-5 pt-0 ms-lg-5">
+                        <img  src="images/programmer.svg" height="300" style="margin-right: 100px;">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        </section>
+        <section class="pt-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="gamber pt-md-5 pt-0 ms-lg-5">
+                        <img  src="images/class.svg" height="300" style="margin-right: 100px;">
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="pt-md-5 pt-0">
+                        <h1 class=" mb-4"><strong>Kamu yang Tentukan <br/>Sendiri Waktu<br/> Belajarmu</strong></h1>
+                        <p class="lead">
+                            Tak perlu khawatir dengan aktivitasmu<br/> saat ini. Bekerja, kuliah ataupun sekolah?<br/> Kamu bisa ikut belajar di sini.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="pt-md-5 pt-0">
+                        <h1 class=" mb-4"><strong>Belajar Langsung dari<br/> Project Studi Kasus</strong></h1>
+                        <p class="lead">
+                            Tidak hanya membahas teori,<br/>
+                             di sini kamu juga akan belajar bagaimana caranya <br/>
+                             menggunakan teknologi yang sedang<br/>
+                              kamu pelajari dalam sebuah project nyata
+                        </p>
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <div class="gamber pt-md-5 pt-0 ms-lg-5">
+                        <img  src="images/sc3.svg" height="300" style="margin-right: 100px;">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        </section>
+        <section class="pt-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="gamber pt-md-5 pt-0 ms-lg-5">
+                        <img  src="images/video-game.svg" height="300" style="margin-right: 100px;">
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="pt-md-5 pt-0">
+                        <h1 class=" mb-4"><strong>Belajar Coding Asyik<br/> Seperti Bermain Game</strong></h1>
+                        <p class="lead">
+                            Belajar coding juga bisa menyenangkan<br/> 
+                            seperti bermain game online. Selesaikan misi,<br/> 
+                            kumpulkan point dan tingkatkan rank belajarmu. Kapan lagi push rank bisa<br/>
+                            sambil belajar dan meningkatkan skill coding.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+    <!-- Akhir Gambar Desc -->
+    <!-- MENGAPA -->
+    <section class=" text-center pt-5">
+        <div class="container">
+            <div class="judul">
+                <h4 class="  fw-bold pt-5 pb-5">Mengapa Belajar Di CODEMAX</h4>
+            </div>
+            <div class="row justify-content-center pt-3">
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-route mb-3" style="font-size: 50px;"></i>
+                        <h4>Alur Belajar<br/> Terarah</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-check mb-3" style="font-size: 50px;"></i>
+                        <h4>Waktu Belajar<br/> Fleksibel</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-tasks mb-3" style="font-size: 50px;"></i>
+                        <h4>Progress Belajar<br/> Terukur</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-briefcase mb-3" style="font-size: 50px;"></i>
+                        <h4>Kurikulum Standar<br/> Industri</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-photo-video mb-3" style="font-size: 50px;"></i>
+                        <h4>Video<br/> Tutorial</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-code-branch mb-3" style="font-size: 50px;"></i>
+                        <h4>Materi Terus<br/> Bertambah</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-medal mb-3" style="font-size: 50px;"></i>
+                        <h4>Sertifikat <br/>Online</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-question-circle mb-3" style="font-size: 50px;"></i>
+                        <h4>Forum Diskusi <br/>Tanya Jawab</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-hand-peace mb-3" style="font-size: 50px;"></i>
+                        <h4>Metode Best<br/> Practice</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-laptop-code mb-3" style="font-size: 50px;"></i>
+                        <h4>Contoh Project</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-code mb-3" style="font-size: 50px;"></i>
+                        <h4>Source Code <br/>Program</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 pt-3">
+                    <div class="isi">
+                        <i class="fas fa-money-bill mb-3" style="font-size: 50px;"></i>
+                        <h4>Garansi<br/> Uang Kembali</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AKHIR MENGAPA -->
+    <section class="pb-lg-5">
+        <!-- Telah dipercaya oleh -->
+         <section class="pt-5">
+             <div class="container">
+             <div class="judul text-center pb-5">
+                 <h4 class=" fw-bold">Telah Dipercaya Oleh</h4>
+             </div>
+             <div class="row row-cols-md-2 row-cols-md-5">
+                <div class="d-flex pb-5">
+                   <img src="images/emilia.png" height="150" width="150"> 
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCo_o4tnQZ2AID7veNlynqdZdGkQCAg5eDA&usqp=CAU" width="150" height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCpLk5dEifPPkcQH69zpiwB_VUKwV0eQ_NOsWiUYEF2rqJwE8ALgzpVdfNqGvM-kjRdrc&usqp=CAU" width="150" height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQLNbhqdoWVWixfOJWqER_V7Sp6bdrMlAnw&usqp=CAU" width="150"height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bnQ2C6U9iKNIv6ocHrgWZVFEEKWLZLumOQ&usqp=CAU" width="150"height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://www.tokkoro.com/picsup/5076616-nico-robin.jpg " width="150"height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="data:image/jpeg;base64,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" width="150" height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykWdgk_Kd1CauHIBms7pvidYdKel_fbEjEQ&usqp=CAU"width="150" height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ahegao_by_Kira_I.png/640px-Ahegao_by_Kira_I.png"width="150" height="150">
+                </div>
+                <div class="d-flex pb-5">
+                    <img src="https://i.pinimg.com/originals/e9/c2/f2/e9c2f2fdad776783b881e085e89ac927.jpg"width="150"height="150">
+                </div>
+             </div>
+             </div>
+         </section>
+        <!-- Akhir telah dipercaya oleh -->
+        
+        <!-- MITRA KAMPUS -->
+        <section>
+            <div class="container">
+                <div class="text-center mb-5 pt-lg-3 pb-3">
+                    <h4 class="fw-bold"> Mitra Kampus</h4>
+                </div>
+                <div class="row row-cols-1 row-cols-5">
+                    <div class="d-flex">
+                        <img src="https://placehold.co/150x150">
+                    </div>
+                    <div class="d-flex">
+                        <img src="https://placehold.co/150x150">
+                    </div>
+                    <div class="d-flex">
+                        <img src="https://placehold.co/150x150">
+                    </div>
+                    <div class="d-flex">
+                        <img src="https://placehold.co/150x150">
+                    </div>
+                    <div class="d-flex">
+                        <img src="https://placehold.co/150x150">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir mitra kampus -->
+        <!-- Diliput oleh -->
+         <section>
+             <div class="container">
+                <div class="text-center pt-lg-5 pb-lg-5">
+                    <h4 class="fw-bold">
+                        Diliput Oleh
+                    </h4>
+                </div>
+                <div class="d-flex justify-content-md-center">
+                    <div class="container">
+                        <img src="https://placehold.co/300x70">
+                    </div>
+                    <div class="container">
+                        <img src="https://placehold.co/300x70">
+                    </div>
+                    <div class="container">
+                        <img src="https://placehold.co/300x70">
+                    </div>
+                </div>
+             </div>
+         </section>
+        <!-- Akhir diliput oleh -->
+    </section>
+    <section class="pt-lg-5" style="background-color:#f4f5f1 ;">
+        <div class="container">
+            <div class="text-center pt-lg-5 pb-3">
+                <img src="https://www.codepolitan.com/img/kamu.4fafef4c.webp" height="100">
+                <h4 class=" fw-bold">
+                    Buktikan sendiri bahwa CODEMAX bisa membantumu mengembangkan keahlianmu, 
+                    seperti yang telah dilakukan oleh ratusan ribu member lainnya.
+                </h4>
+                <br/>
+                <a href="#" class="btn btn-secondary ps-3 pe-3">Mulai Dari Kelas Gratis</a>
+            </div>
+        </div>
+        <hr>
+    </section>
+    </div>
+    <div id ="footer">
+    <!-- Footer 1 -->
+    <footer class="footer-1 pt-lg-5">
+        <div class="container">
+            <div class="row container row-cols-2 row-cols-md-4">
+                <div class="col">
+                    <h6 class=" fw-bold">JOIN US!</h6>
+                    <ul>
+                        <li>
+                            <a href="http://">Cara Belajar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://wa.me/c/6285732172248">Features</a>
+                        <li>
+                            <a href="http://">Terms & Conditions</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Contact</a>
+                        <li>
+                            <a href="http://">Frequenly Asked</a>
+                        </li>
+                        <li>
+                            <a href="http://">Question</a>
+                        </li>
+                        <li>
+                            <a href="http://">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 class=" fw-bold">PROGRAMS</h6>
+                    <ul>
+                        <li>
+                            <a href="http://">Developer School</a>
+                        </li>
+                        <li>
+                            <a href="http://">Kampus Coding</a>
+                        </li>
+                        <li>
+                            <a href="http://">Online Mentoring</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 class=" fw-bold">DEVELOPERS</h6>
+                    <ul>
+                        <li>
+                            <a href="http://">Forum Discussions</a>
+                        </li>
+                        <li>
+                            <a href="http://">Hall Of Fame</a>
+                        </li>
+                        <li>
+                            <a href="http://">Leaderboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 class=" fw-bold">COMPANY</h6>
+                    <ul>
+                        <li>
+                            <a href="http://">About Codemax</a>
+                        </li>
+                        <li>
+                            <a href="http://">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </section>
-
-    <section id="caraousel">
-        <div class="container" style="margin-top: 90px;">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://image.freepik.com/free-psd/super-sale-banner_1393-365.jpg?1" class="d-block w-100" height="300">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://image.freepik.com/free-photo/beautiful-smiling-young-blonde-woman-pointing-sunglasses-holding-shopping-bags-credit-card-pink-wall_496169-1506.jpg" class="d-block w-100" height="300">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/coomingsoon.png" class="d-block w-100" height="300">
-                    </div>
-                </div>
-            </div>
-            <div class="bg-primary">
-                <hr />
-            </div>
         </div>
-    </section>
-
-    <section id="body" class="mt-5">
+        <hr>
+    </footer>
+    <!-- Akhirf footer 1 -->
+    <!-- Footer 2 -->
+    <div class="footer-2">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1>Customer Online Rating</h1>
-                    <p class="lead">
-                        Ketika kamu mengalami masalah,ingin belajar tentang IT
-                        kami ada solusinya, belajar disini murah,simple,dan murah di pahami
-                        Kamu tahu apa yang menjadi kebanggaan kami? Yaitu kepuasan
-                        Anda!
-                        Setelah memakai produk kami, jangan lupa untuk memberikan
-                        testimoni positif
-                    </p>
+                <div class="col-6">
+                    <span>
+                        ©
+                        <span>2021</span>
+                        CodeMax All rights reversed
+                    </span>
                 </div>
-                <div class="col">
-                    <img src="images/undraw_country.svg" alt="oke" height="300" class=" ms-lg-5">
-                </div>
-            </div>
-            <div class="bg-primary">
-                <hr />
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <h1>Testimonials</h1>
-            <p class=" text-center">
-                Testimoni Dari Para Pelanggan
-            </p>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="profile">
-                        <img src="images/avatar1.jpg" class="user">
-                        <blockquote class="desk">
-                            Materi disini sangat murah dan menarik silahkan dicoba
-                            anda akan ingin terus-menerus belajar disini
-                        </blockquote>
-                        <h6>Nabila Azhira <span>Students at University Alfro</span></h6>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="profile ">
-                        <img src="images/avatar2.jpg" class="user">
-                        <blockquote class="desk">
-                            Penyampaian sangat mudah dipahami , pembimbing juga professional
-                            silahkan ikut program ini dijamin anda cepat bisa
-                        </blockquote>
-                        <h6>Ahmed Jaelani <span>Designer at Bafront Company</span></h6>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="profile ">
-                        <img src="images/avatar3.jpg" class="user">
-                        <blockquote class="desk">
-                            Saya sangat senang dengan respon dari pemberi materi yang ramah
-                            bila ada error , mereka memberi saya solusi 
-                        </blockquote>
-                        <h6>Sayla Halimun <span>Sutradara at SumbarFilm</span></h6>
+                <div class="col-5 text-left ms-auto">
+                    <div class="row justify-content-end">
+                        <div class="col gambare">
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="https://placehold.co/30x30" class="rounded-circle">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="https://placehold.co/30x30" class="rounded-circle">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="https://placehold.co/30x30" class="rounded-circle">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="https://placehold.co/30x30" class="rounded-circle">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="https://placehold.co/30x30" class="rounded-circle">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="js/bootstrap.min.js"></script>
+    </div>
+    <!-- Akhir footer 2 -->
+    </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
